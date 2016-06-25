@@ -1,19 +1,19 @@
 
 
 var multiplesOf3nad5 = function(number){
+	number = document.getElementById("multiple").value;
 	var sum = 0;
-	for(var i=0; i<1000; i++){
+	for(var i=0; i<number; i++){
 		if((i%3 === 0) || (i%5 === 0)){
 			sum+=i;	
 		};
 	};
-	return sum;
+	document.getElementById("result1").innerHTML = sum;
 };
-console.log(multiplesOf3nad5(1000))
-
 
 
 var fibonacci4k = function(max){
+	max = document.getElementById("maximum").value;
 	var first = 1;
 	var second = 2;
 	var sum = second;
@@ -26,31 +26,28 @@ var fibonacci4k = function(max){
 		first = second;
 		second = next;
 	}
-	return sum;
+	document.getElementById("result2").innerHTML = sum;
 };
-
-console.log(fibonacci4k(4000000))
 
 
 var largestPrime = function(num) {
+	num = document.getElementById("number").value;
 	var factors = [];
 	var i = 2;
 	while (num > 1)
 	{
-		console.log(num);
 		while (num % i === 0)
 		{
 			factors.push(i);
 			num /= i;
-			console.log("Caught: " +i);
+
 		}
 		i += 1;
 
 	}
-	console.log(factors)
-	return factors[factors.length-1]; 
-}
-largestPrime(600851475143)
+	document.getElementById("result3").innerHTML = factors[factors.length-1]; 
+};
+
 
 
 

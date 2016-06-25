@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Project Euler</title>
+	<title>Project Euler - The Odin Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 
+<div class="base">
+	<div class="headerbar"><h1>The Odin Project - Project Euler</h1></div>
+
+	<div class="primary">
+		
+			<div class="problem1">
+			<h2>Problem 1</h2>
+			<p>Sum of multiples of 3 or 5</p>
+			<form>
+				<input type="text" id="multiple" value="1000" onchange="multiplesOf3nad5()">
+			</form>
+			<p>The result is: <b><span id="result1"></span></p></b>
+			<script type="text/javascript"> 
+					multiplesOf3nad5(); 
+			</script>
+			</div>
+			
+			<div class="problem2">
+			<h2>Problem 2</h2>
+			<p>Sum of even Fibonacci numbers</p>
+			<form>
+				<input type="text" id="maximum" value="4000000" onchange="fibonacci4k()">
+			</form>
+			<p>The result is: <b><span id="result2"></span></p></b>
+			<script type="text/javascript">
+				fibonacci4k();
+			</script>
+			</div>
+			
+			<div class="problem3">
+			<h2>Problem 3</h2>
+			<p>Largest prime factor</p>
+			<form>
+				<input type="text" id="number" value="600851475143" onchange="largestPrime()">
+			</form>
+			<p>The result is: <b><span id="result3"></span></p></b>
+			<script type="text/javascript">
+				largestPrime();
+			</script>
+			</div>	
+		
+	</div>
+</div>
 
 </body>
 </html>

@@ -1,0 +1,61 @@
+.base {
+	top: 0; left: 0; right: 0;
+
+}
+
+.headerbar{
+	height: 45px; width:100%; left: 0; top: 0;
+	background-color: #333333;
+	position: fixed;
+	
+}
+.headerbar h1{
+	font-family: sans-serif;
+	text-align: center;
+	line-height: 0;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.primary {
+	top: 70px; left: 0; 
+	width: 100%; height: 250px;
+	background-color: #e6e6e6;
+	position: fixed;
+	
+}
+
+li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+.problem1, .problem2, .problem3 {
+	height: 300px; width: 350px; 
+	background-color: #a6a6a6;
+	border-radius: 5px;
+	border: solid #404040 2px;
+}
+
+.problem1 {
+	float: left;
+	margin: 2% 0 0 3.5%;
+	
+}
+
+.problem2 {
+	float: left;
+	margin: 2% 0 0 5.5%;
+
+}
+
+.problem3 {
+	float: right;
+	margin: 2% 3.5% 0 0;
+
+}
+
+h2, p, form {
+	margin-left: 30px;
+}
+
